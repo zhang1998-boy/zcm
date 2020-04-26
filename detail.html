@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/detaicReset.css">
+        <link rel="stylesheet" href="./css/iconfont.css">
+        <link rel="stylesheet" href="./css/detail.css">
+        <script>
+            // 适配 
+            window.onload = function () {
+                var fs = document.documentElement.clientWidth / 750 * 100;
+                document.querySelector("html").style.fontSize = fs + "px";
+            }
+        </script>
+       
+</head> 
+<body>
+    <header> 
+    <a href="./index.html"><i class="iconfont icon-fanhui"></i></a>
+    <span> 赚钱计划8号1期</span>
+    <i id="menu" class="iconfont icon-caidan"></i>
+    </header>
+
+    <div class="data">
+        <p class="data1"><strong>9.2%+0.5%</strong></p>
+        <p class="data2"><em>9.7%(9.2%+活动加息0.5%)</em></p>
+    </div>
+
+    <div class="support">
+        <div class="keys">
+            <span>  1000元起投    </span>
+            <span> 限期180天</span>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <i class="iconfont icon-xinshouzhiyin"></i>省级律所法律支持
+                </li>
+                <li>
+                    <i class="iconfont icon-xinshouzhiyin"></i>浙大友创战略入股
+                </li>
+                <li>
+                    <i class="iconfont icon-xinshouzhiyin"></i>招财猫易贷严风控
+                </li>
+                <li>
+                    <i class="iconfont icon-xinshouzhiyin"></i>千万级风险保障金
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="process">
+        <div class="pro-wrap">
+            <div class="pro-front"> </div>
+            <div class="pro-block">37% </div>
+
+        </div>
+        <p class="pro-info">
+            <span>已投资<em>40</em>人 </span>
+            <span>剩余可投<em>888888</em>元 </span>
+
+        </p>
+    </div>
+  
+    <div class="footerlink">
+        <p> <a href="">查看项目实情</a></p>
+    </div>
+
+<footer>
+ <a href="#" class="earnings">收益估算</a>
+ <a href="#" class="investment">立即投资</a>
+</footer>
+
+<div class="mask" id="mask">
+    <div class="nav">
+        <a href="#">
+            <i class="iconfont icon-zhuye"></i>
+            <span>主页</span>
+        </a>
+        <a href="#">
+            <i class="iconfont icon-suo"></i>
+            <span>安全保障</span>
+        </a>
+        <a href="#">
+            <i class="iconfont icon-touzi"></i>
+            <span>我要投资</span>
+        </a>
+        <a href="#">
+            <i class="iconfont icon-jiaruwomen"></i>
+            <span>账户中心</span>
+        </a>
+    </div>
+</div>
+
+<!-- js内容 -->
+<script>
+//    get方法获取到蒙版和菜单按钮 
+    let mask = document.getElementById("mask");
+    let menu = document.getElementById("menu");
+// 当用户点击按钮时会执行 display  block
+    menu.onclick = function(){
+        mask.style.display = "block";
+    }
+</script>
+</body>
+</html>
